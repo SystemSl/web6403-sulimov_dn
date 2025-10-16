@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    font-family: "Comic Sans MS"
+}
+
+.nav-container {
+    position: sticky;
+    top: 0;
+}
+
+.container {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+}
+
+.container-table {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.container-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.container-imgs img {
+    max-width: 100%;
+    height: auto;
+}
+
+.block-of-text {
+    position: relative;
+    margin-right: 20px;
+    width: fit-content;
+    max-width: 30%;
+    padding: 20px;
+    background-color: #e6e6e6;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: justify;
+    font-size: 25px;
+    line-height: 35px;
+    color: #1f1f1f;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 70px;
+        right: -20px;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 20px solid #e6e6e6;
+    }
+}
+
+.mob-type {
+    font-size: 40px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    padding: 10px 10px;
+    margin: 10px;
+    background-color: #e4e4e4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+nav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #242424;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+nav a.active {
+    background-color: #cecece;
+}
+
+nav a:hover {
+    background-color: #c0c0c0;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 8px;
+    width: 200px;
+}
+
+tbody td:nth-child(2) {
+    text-align: left;
+}
+
+tbody td:nth-child(1),
+tbody td:nth-child(3) {
+    text-align: center;
+}
+
+tbody td:nth-child(4) {
+    text-align: right;
+}
