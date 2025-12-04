@@ -1,0 +1,19 @@
+{
+    "/mobs_damage": {
+        "get": {
+            "mobs_damage": [
+                { "name": "Белый медведь", "easy": "4", "normal": "6", "hard": "9" },
+                { "name": "Дельфин", "easy": "2", "normal": "3", "hard": "4" },
+                { "name": "Зомби", "easy": "2", "normal": "3", "hard": "4" },
+                { "name": "Паук", "easy": "2", "normal": "2", "hard": "3" },
+                { "name": "Странник Края", "easy": "4", "normal": "7", "hard": "10" },
+                { "name": "Фантом", "easy": "4", "normal": "6", "hard": "9" }
+            ]
+        }
+    },
+    "/users": {
+        "post": {
+            "message": "Account registered!"
+        }
+    }
+}
