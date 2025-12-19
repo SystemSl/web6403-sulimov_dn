@@ -48,10 +48,6 @@ if (form) {
     }
 
     function checkFormValidity() {
-        const isLoginValid = validateInput(loginInput, "login");
-        const isEmailValid = validateInput(emailInput, "email");
-        const isPasswordValid = validateInput(passwordInput, "password");
-        const isAgreeValid = agreeInput.checked;
         const valid = 
             loginInput.classList.contains("valid") &&
             emailInput.classList.contains("valid") &&
@@ -68,9 +64,7 @@ if (form) {
     });
 
     agreeInput.addEventListener("change", () => {
-        const errorSpan = document.getElementById("error-agree");
-        if (!agreeInput.checked) errorSpan.textContent = "Необходимо согласие";
-        else errorSpan.textContent = "";
+        validateInput(agreeInput, agreeInput.id);
         checkFormValidity();
     });
 
